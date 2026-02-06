@@ -12,12 +12,15 @@ interface GeneratorModalProps {
   onClose: () => void
 }
 
-function getSteps(nicho: NichoGenerator) {
-  const steps: { type: "campos" } | { type: "pergunta"; pergunta: MetaPergunta; index: number }[] = [
+type StepItem =
+  | { type: "campos" }
+  | { type: "pergunta"; pergunta: MetaPergunta; index: number }
+
+function getSteps(nicho: NichoGenerator): StepItem[] {
+  return [
     { type: "campos" },
     ...nicho.meta.perguntas.map((p, i) => ({ type: "pergunta" as const, pergunta: p, index: i })),
   ]
-  return steps
 }
 
 export function GeneratorModal({ nicho, onClose }: GeneratorModalProps) {
@@ -26,10 +29,8 @@ export function GeneratorModal({ nicho, onClose }: GeneratorModalProps) {
   const [form, setForm] = useState<Record<string, string>>({})
 
   const step = steps[stepIndex]
-  const isFirst = stepIndex === 0
   const isLast = stepIndex === steps.length - 1
   const lp = nicho.lp
-  const meta = nicho.meta
 
   return (
     <AnimatePresence>
@@ -103,7 +104,7 @@ export function GeneratorModal({ nicho, onClose }: GeneratorModalProps) {
                     <label className="block text-base font-medium text-slate-700 mb-2">{step.pergunta.label} *</label>
                     {step.pergunta.options && step.pergunta.options.length > 0 ? (
                       <div className="space-y-2">
-                        {step.pergunta.options.map((opt) => (
+                        {step.pergunta.options.map((opt: string) => (
                           <label key={opt} className="flex items-center gap-3 cursor-pointer">
                             <input
                               type="radio"

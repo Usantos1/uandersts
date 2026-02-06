@@ -3,7 +3,7 @@
  * Variantes: cards (slide 4), generator (slide 6), copyHeadlines (slide 8), whatsappScript (slide 9).
  */
 import { motion } from "framer-motion"
-import { MessageCircle, Copy, ExternalLink, FileText } from "lucide-react"
+import { MessageCircle, Copy, FileText } from "lucide-react"
 
 /** Logo Facebook para o botão da comunidade (animado). */
 function FacebookIcon({ className }: { className?: string }) {
