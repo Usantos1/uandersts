@@ -65,14 +65,14 @@ export default function LockedSlide() {
               <p className="font-semibold text-emerald-200 mb-1 flex items-center gap-1.5 text-base">
                 <MessageCircle size={20} /> WhatsApp
               </p>
-              <p className="text-white/85 leading-snug text-base">Maior volume, leads mais baratos. Direto pro contato.</p>
+              <p className="text-white/85 leading-snug text-base">Maior volume, leads mais baratos. Direto para o contato.</p>
             </div>
             <div className="w-full flex-1 rounded-xl border border-emerald-500/40 bg-emerald-500/10 backdrop-blur p-4 shadow-lg">
               <div className="flex items-center gap-2 mb-3 pb-2 border-b border-emerald-400/40">
                 <MessageCircle className="text-emerald-400" size={20} />
                 <span className="text-base font-semibold text-emerald-300">WhatsApp direto</span>
               </div>
-              <p className="text-base text-white/85 leading-snug">Lead direto pro WhatsApp. Menor custo, melhor conversão no seguimento, porém menos qualificado.</p>
+              <p className="text-base text-white/85 leading-snug">Lead direto para o WhatsApp. Menor custo, melhor conversão no seguimento, porém menos qualificado.</p>
               <div className="mt-3 h-10 rounded-lg bg-emerald-500/30 border border-emerald-400/30 flex items-center justify-center text-base font-medium text-emerald-200">
                 Recomendado
               </div>

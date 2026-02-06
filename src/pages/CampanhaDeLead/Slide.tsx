@@ -172,7 +172,7 @@ export function Slide({ slide, theme, onCopy, onOpenGenerator, onOpenFormDemo }:
               </div>
             )}
             <p className={`text-2xl sm:text-3xl ${theme.body} mb-3`}>
-              Escolha o nicho e veja ideia de formulário.
+              Escolha o nicho e veja a ideia de formulário.
             </p>
             <div className="grid grid-cols-2 gap-3 sm:gap-4">
               {NICHOS_ORDER.map((id) => {

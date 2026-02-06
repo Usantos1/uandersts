@@ -192,7 +192,7 @@ export const FORMULARIO_NICHOS: NichoGenerator[] = [
       observacao: "Poucos campos. CTA único. Página rápida.",
     },
     copy: {
-      headlines: ["Orçamento de encanador e eletricista na hora", "Resolva vazamento e elétrica sem stress", "Serviço rápido na sua região"],
+      headlines: ["Orçamento de encanador e eletricista na hora", "Resolva vazamento e elétrica sem estresse", "Serviço rápido na sua região"],
       primaryTexts: ["Informe o problema e a urgência. Te respondemos pelo WhatsApp.", "Orçamento gratuito. Atendimento rápido."],
       cta: "Pedir orçamento",
       linhaQualificacao: "Atendemos na região de Campinas e interior.",
