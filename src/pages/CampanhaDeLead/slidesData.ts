@@ -42,30 +42,29 @@ export const slidesData: SlideData[] = [
   },
   {
     smallTitle: "Objetivo da aula",
-    headline: "Você está comprando lead… ou pagando curioso pra te chamar?",
+    headline: "Você vai entender qual é a campanha de Lead ideal para o seu seguimento",
     bullets: [
       "O Meta não entrega cliente. Entrega comportamento.",
       "Se você otimiza errado, paga por lead curioso.",
-      "Hoje você sai com: objetivo certo + filtro + criativo que puxa lead bom.",
+      "Hoje você sai com: destino certo + filtro no formulário.",
     ],
     punchline: "Lead barato sem filtro = volume disfarçado de prejuízo.",
   },
   {
     smallTitle: "Passo 1",
-    headline: "O objetivo que você escolhe decide QUEM o Meta te entrega.",
+    headline: "O destino que você escolhe decide quem o Meta te entrega.",
     bullets: [
-      "Campanha de lead não é captar. É selecionar.",
-      "Objetivo errado cria volume e mata qualidade.",
-      "A campanha tem que otimizar para: resposta + intenção.",
+      "Campanha de lead pra whatsapp, ideal pra ter volume, com qualificacao manual, Chatbot ou IA.",
+      "Campanha de Formulário instantâneo (Meta), vejo pessoas usando pra imobiliaria e planos de saude.",
+      "Campanha de Formulário na LP, melhor pra quando voce precisa qualificar por regiao, interesse, e nivel de consiencia...",
     ],
-    punchline: "Se o lead não responde, o erro começou aqui.",
+    punchline: "Se o lead não responde, o erro pode estar na escolha do destino.",
   },
   {
     smallTitle: "",
-    headline: "Modelo de formulário de qualificação na Comunidade",
+    headline: "Baixar formulário de qualificação na Comunidade",
     bullets: [
-      "Na comunidade Extremo Plus: aula passo a passo para baixar e importar o modelo de formulário na sua página",
-      "Modelo pronto para Elementor, ideal para qualificar leads antes do contato",
+      "Aula passo a passo para baixar e importar o modelo de formulário na sua página",
     ],
     punchline: "",
     isGenerator: true,
@@ -78,7 +77,6 @@ export const slidesData: SlideData[] = [
     bullets: [
       "Público certo não compensa criativo fraco.",
       "Criativo forte não salva segmentação ruim.",
-      "Se o lead vem errado, o problema começa no anúncio.",
     ],
     punchline: "",
   },
@@ -92,14 +90,14 @@ export const slidesData: SlideData[] = [
     ],
     punchline: "Velocidade transforma lead em dinheiro.",
     whatsappScript:
-      "Oi {{Nome}}! Aqui é o Uander. Você preencheu o formulário no nosso site ou anúncio sobre [produto/serviço X], e eu estou aqui pra te ajudar a encontrar a melhor opção. Posso te mandar mais informações ou agendar um horário. O que fizer mais sentido pra você agora?",
+      "Oi {{Nome}}, Uander aqui 👍\n\nVi seu interesse em [produto/serviço X] e já separei algumas opções.\n\nMe diz uma coisa:\nisso é algo urgente ou você ainda está avaliando?",
   },
   {
     smallTitle: "Abrindo o gerenciador de anúncios...",
-    headline: "O plano prático em 20 minutos",
+    headline: "Vamos criar as campanhas em minutos...",
     bullets: [
-      "Objetivo certo define o tipo de lead",
-      "Formulário vs LP depende do cenário",
+      "Destino certo define o tipo de lead",
+      "Whatsapp, Formulário vs LP depende do cenário",
       "Filtro transforma quantidade em qualidade",
       "Criativo puxa a conversa certa",
     ],

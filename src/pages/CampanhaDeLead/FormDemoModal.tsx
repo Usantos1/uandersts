@@ -36,12 +36,12 @@ export function FormDemoModal({ onClose }: { onClose: () => void }) {
           onClick={(e) => e.stopPropagation()}
           className="w-full max-w-md rounded-2xl bg-white shadow-2xl border border-slate-200 overflow-hidden flex flex-col"
         >
-          <div className="flex items-center justify-between px-5 py-4 border-b border-slate-100">
-            <div>
+          <div className="flex items-center justify-between gap-4 px-5 py-4 border-b border-slate-100">
+            <div className="flex-1 text-center min-w-0">
               <h2 className="text-2xl font-bold text-slate-900">Comece sua aplicação agora</h2>
               <p className="text-base text-slate-600 mt-0.5">Basta preencher o formulário abaixo para agendar sua consultoria.</p>
             </div>
-            <button type="button" onClick={onClose} className="p-2 rounded-lg text-slate-500 hover:bg-slate-100" aria-label="Fechar">
+            <button type="button" onClick={onClose} className="p-2 rounded-full text-slate-500 hover:bg-slate-100 shrink-0" aria-label="Fechar">
               <X size={20} />
             </button>
           </div>
@@ -56,8 +56,8 @@ export function FormDemoModal({ onClose }: { onClose: () => void }) {
                       type="text"
                       value={form.nome}
                       onChange={(e) => setForm((f) => ({ ...f, nome: e.target.value }))}
-                      placeholder="Seu nome"
-                      className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-800 placeholder-slate-400 focus:ring-2 focus:ring-violet-500 focus:border-violet-500"
+                      placeholder="Nome"
+                      className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-800 placeholder-slate-400 focus:ring-2 focus:ring-violet-500 focus:border-violet-500"
                     />
                   </div>
                   <div>
@@ -66,8 +66,8 @@ export function FormDemoModal({ onClose }: { onClose: () => void }) {
                       type="email"
                       value={form.email}
                       onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
-                      placeholder="email@exemplo.com"
-                      className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-800 placeholder-slate-400 focus:ring-2 focus:ring-violet-500 focus:border-violet-500"
+                      placeholder="E-mail"
+                      className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-800 placeholder-slate-400 focus:ring-2 focus:ring-violet-500 focus:border-violet-500"
                     />
                   </div>
                   <div>
@@ -76,15 +76,15 @@ export function FormDemoModal({ onClose }: { onClose: () => void }) {
                       type="tel"
                       value={form.whatsapp}
                       onChange={(e) => setForm((f) => ({ ...f, whatsapp: e.target.value }))}
-                      placeholder="11999999999"
-                      className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-800 placeholder-slate-400 focus:ring-2 focus:ring-violet-500 focus:border-violet-500"
+                      placeholder="(11) 99123-4567"
+                      className="w-full rounded-xl border border-slate-300 px-4 py-3 text-slate-800 placeholder-slate-400 focus:ring-2 focus:ring-violet-500 focus:border-violet-500"
                     />
                   </div>
                 </div>
                 <button
                   type="button"
                   onClick={() => setStep(2)}
-                  className="w-full py-3 px-5 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-semibold transition-colors border-2 border-emerald-500/50"
+                  className="w-full py-3 px-5 rounded-full bg-orange-500 hover:bg-orange-600 text-white font-semibold transition-colors"
                 >
                   CONTINUAR
                 </button>
@@ -129,11 +129,11 @@ export function FormDemoModal({ onClose }: { onClose: () => void }) {
                     </div>
                   </div>
                 </div>
-                <div className="flex gap-3">
-                  <button type="button" onClick={() => setStep(1)} className="flex-1 py-3 px-5 rounded-xl bg-slate-600 hover:bg-slate-700 text-white font-semibold transition-colors">
+                <div className="flex gap-3 justify-center">
+                  <button type="button" onClick={() => setStep(1)} className="flex-1 max-w-[180px] py-3 px-5 rounded-full bg-slate-600 hover:bg-slate-700 text-white font-semibold transition-colors">
                     VOLTAR
                   </button>
-                  <button type="button" onClick={() => setStep(3)} className="flex-1 py-3 px-5 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-semibold transition-colors border-2 border-emerald-500/50">
+                  <button type="button" onClick={() => setStep(3)} className="flex-1 max-w-[180px] py-3 px-5 rounded-full bg-orange-500 hover:bg-orange-600 text-white font-semibold transition-colors">
                     CONTINUAR
                   </button>
                 </div>
@@ -178,14 +178,14 @@ export function FormDemoModal({ onClose }: { onClose: () => void }) {
                     </div>
                   </div>
                 </div>
-                <div className="flex gap-3">
-                  <button type="button" onClick={() => setStep(2)} className="flex-1 py-3 px-5 rounded-xl bg-slate-600 hover:bg-slate-700 text-white font-semibold transition-colors">
+                <div className="flex gap-3 justify-center">
+                  <button type="button" onClick={() => setStep(2)} className="flex-1 max-w-[180px] py-3 px-5 rounded-full bg-slate-600 hover:bg-slate-700 text-white font-semibold transition-colors">
                     VOLTAR
                   </button>
                   <button
                     type="button"
                     onClick={onClose}
-                    className="flex-1 py-3 px-5 rounded-xl bg-orange-500 hover:bg-orange-600 text-white font-semibold transition-colors border-2 border-emerald-500/50 flex items-center justify-center gap-2"
+                    className="flex-1 max-w-[200px] py-3 px-5 rounded-full bg-orange-500 hover:bg-orange-600 text-white font-semibold transition-colors flex items-center justify-center gap-2"
                   >
                     <MessageCircle size={20} /> Agendar Consultoria
                   </button>
