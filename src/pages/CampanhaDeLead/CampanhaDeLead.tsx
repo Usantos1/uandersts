@@ -3,7 +3,7 @@
  * Navegação: botões ou teclado (setas / espaço). Slide 1 = LockedSlide (intocável).
  */
 import { useState, useEffect, useCallback } from "react"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 import { Maximize2, ChevronLeft, ChevronRight } from "lucide-react"
 import { slidesData, TOTAL_SLIDES } from "./slidesData"
 import { SLIDE_THEMES } from "./slideThemes"
